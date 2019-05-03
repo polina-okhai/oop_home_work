@@ -1,10 +1,12 @@
 <?php
-require 'Objects/rectangle.php';
-require 'Objects/triangle.php';
-require 'Objects/circle.php';
-require 'Objects/interface.php';
 ini_set('display_errors', 1);
 
-$interface = new Figure(2, 3);
-echo $interface->perimeter();
- ?>
+require 'Entities/Figure.php';
+require 'Entities/Rectangle.php';
+require 'Entities/Triangle.php';
+require 'Entities/Circle.php';
+
+$rectangle = new Rectangle(5, 10);
+echo $rectangle->perimeter();
+var_dump($rectangle);
+?>

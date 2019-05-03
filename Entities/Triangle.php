@@ -1,7 +1,8 @@
 <?php
 class Triangle extends Figure {
   public function __construct($a_side, $b_side, $c_side) {
-    parent::__construct($a_side, $b_side);
+    $this->a_side = $a_side;
+    $this->b_side = $b_side;
     $this->c_side = $c_side;
   }
   public function perimeter(){

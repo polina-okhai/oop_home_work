@@ -1,5 +1,5 @@
 <?php
-class Triangle extends Figure {
+class Circle extends Figure {
   public function __construct($radius, $diametr) {
     $this->radius = $radius;
     $this->diametr = $diametr;
